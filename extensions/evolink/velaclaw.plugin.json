@@ -1,0 +1,28 @@
+{
+  "id": "evolink",
+  "enabledByDefault": true,
+  "providers": ["evolink"],
+  "providerAuthEnvVars": {
+    "evolink": ["EVOLINK_API_KEY"]
+  },
+  "providerAuthChoices": [
+    {
+      "provider": "evolink",
+      "method": "api-key",
+      "choiceId": "evolink-api-key",
+      "choiceLabel": "Evolink API key",
+      "groupId": "evolink",
+      "groupLabel": "Evolink",
+      "groupHint": "API key",
+      "optionKey": "evolinkApiKey",
+      "cliFlag": "--evolink-api-key",
+      "cliOption": "--evolink-api-key <key>",
+      "cliDescription": "Evolink API key"
+    }
+  ],
+  "configSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {}
+  }
+}
